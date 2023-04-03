@@ -81,6 +81,7 @@ func init() {
 func main() {
 
 	// Generate ratings for the different vehicles
+	generateRating()
 
 	// Print ratings for the different vehicles
 }
