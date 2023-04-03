@@ -16,6 +16,8 @@ type truck struct {
 }
 
 type bike struct {
+	model string
+	make  string
 }
 
 // Values array for the feedback.json file
