@@ -4,9 +4,15 @@ type vehicle interface {
 }
 
 type car struct {
+	model       string
+	make        string
+	typeVehicle string
 }
 
 type truck struct {
+	model       string
+	make        string
+	typeVehicle string
 }
 
 type bike struct {
