@@ -109,7 +109,8 @@ func generateRating() {
 		for _, msg := range v.Feedback {
 			text := strings.Split(msg, "")
 			if len(text) >= 5 {
-
+				vehRating = 5.0
+				vehResult.feedbackTotal++
 			}
 
 		}
