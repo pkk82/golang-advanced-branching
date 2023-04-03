@@ -27,6 +27,9 @@ type feedbackResult struct {
 	feedbackNeutral  int
 }
 
+var vehicleResult map[string]feedbackResult
+var inventory []vehicle
+
 // Values array for the feedback.json file
 type Values struct {
 	Models []Model `json:"values"`
