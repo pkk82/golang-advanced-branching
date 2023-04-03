@@ -3,6 +3,15 @@ package main
 type vehicle interface {
 }
 
+type car struct {
+}
+
+type truck struct {
+}
+
+type bike struct {
+}
+
 // Values array for the feedback.json file
 
 // Model array for the feedback.json file
