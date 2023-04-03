@@ -20,6 +20,13 @@ type bike struct {
 	make  string
 }
 
+type feedbackResult struct {
+	feedbackTotal    int
+	feedbackPositive int
+	feedbackNegative int
+	feedbackNeutral  int
+}
+
 // Values array for the feedback.json file
 type Values struct {
 	Models []Model `json:"values"`
