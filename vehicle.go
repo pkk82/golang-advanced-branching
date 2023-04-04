@@ -44,7 +44,7 @@ type Values struct {
 	Models []Model `json:"values"`
 }
 
-// Model array for the feedback.json file
+// Model arra for the feedback.json file
 type Model struct {
 	Name     string   `json:"model"`
 	Feedback []string `json:"feedback"`
@@ -86,6 +86,16 @@ func main() {
 
 	// Print ratings for the different vehicles
 	for _, veh := range inventory {
+		switch v := veh.(type) {
+		case car:
+			v.showRating()
+		case bike:
+			v.showRating()
+		case truck:
+			v.showRating()
+		default:
+			fmt.Printf("Are you sure this Vehicle Type exists")
+		}
 	}
 }
 
