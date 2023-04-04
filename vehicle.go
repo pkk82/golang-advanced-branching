@@ -85,6 +85,8 @@ func main() {
 	generateRating()
 
 	// Print ratings for the different vehicles
+	for _, veh := range inventory {
+	}
 }
 
 func readJSONFile() Values {
